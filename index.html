@@ -1,25 +1,12 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Bucketlisted Mock Previews</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>html,body,#app{height:100%}.demo-nav a{text-decoration:underline}</style>
-</head>
-<body class="bg-neutral-50">
-  <div class="max-w-7xl mx-auto p-4">
-    <nav class="demo-nav flex flex-wrap gap-3 mb-4 text-sm">
-      <a href="?view=list-final">List: Final</a>
-      <a href="?view=list-houston">List: Houston</a>
-      <a href="?view=fort">Fort McHenry</a>
-      <a href="?view=tour">Self-Guided Tour</a>
-    </nav>
-    <div id="app" class="h-full"></div>
-  </div>
-  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <script src="./app.jsx" type="text/babel"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bucketlisted Mock Previews</title>
+  </head>
+  <body class="bg-neutral-50">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
