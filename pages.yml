@@ -22,8 +22,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm ci
-      # tell Vite the repo subpath so asset URLs work:
+      - run: npm install
+      # Tell Vite the repo subpath (e.g., /bucketlisted-mocks/)
       - run: echo "GHPAGES_BASE=/${GITHUB_REPOSITORY#*/}/" >> $GITHUB_ENV
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
